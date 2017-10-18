@@ -5,6 +5,7 @@ namespace SilverStripe\ElementalBlocks\Block;
 use SilverStripe\ElementalBlocks\Model\Link;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\HiddenField;
+use SilverStripe\View\Requirements;
 
 class BannerBlock extends FileBlock
 {
@@ -45,7 +46,12 @@ class BannerBlock extends FileBlock
 
             // Set the height of the content fields
             $fields->fieldByName('Root.Main.Content')->setRows(5);
+
+            $fields->addFieldToTab('Root.Main', \SilverStripe\Forms\LiteralField::create('test', '<button class="insert-link__dialog-wrapper--no-tinymce insert-link__dialog-wrapper--internal robbie" type="button">Click me...</button'));
         });
+
+        Requirements::javascript('/assets/_tinymce/tinymce-cms-4a3f7622c2.js');
+        Requirements::javascript('silverstripe/elemental-blocks:javascript/test.js');
 
         return parent::getCMSFields();
     }
