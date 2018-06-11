@@ -1,10 +1,19 @@
-# SilverStripe Elemental Blocks
+# SilverStripe Elemental Blocks (deprecated)
 
 [![Build Status](http://img.shields.io/travis/silverstripe/silverstripe-elemental-blocks.svg?style=flat)](https://travis-ci.org/silverstripe/silverstripe-elemental-blocks)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/silverstripe/silverstripe-elemental-blocks/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/silverstripe/silverstripe-elemental-blocks/?branch=master)
 [![codecov](https://codecov.io/gh/silverstripe/silverstripe-elemental-blocks/branch/master/graph/badge.svg)](https://codecov.io/gh/silverstripe/silverstripe-elemental-blocks)
 
 This repository contains a base set of CMS content blocks for the [silverstripe-elemental](https://github.com/dnadesign/silverstripe-elemental) module.
+
+## Warning: deprecated!
+
+For SilverStripe 4.2 or newer, please use one or both of the following modules instead:
+
+* [silverstripe/elemental-fileblock](https://github.com/silverstripe/silverstripe-elemental-fileblock)
+* [silverstripe/elemental-bannerblock](https://github.com/silverstripe/silverstripe-elemental-bannerblock)
+
+This module will only be accepting patch fixes to the `1.0` branch from now on.
 
 ## Installation
 
