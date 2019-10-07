@@ -16,6 +16,6 @@ class DBLinkTest extends SapphireTest
 
     public function testScaffoldsBlockLinkField()
     {
-        $this->assertInstanceOf(BlockLinkField::class, (new DBLink)->scaffoldFormField());
+        $this->assertInstanceOf(BlockLinkField::class, (new DBLink())->scaffoldFormField());
     }
 }

@@ -16,6 +16,10 @@ class FileBlockTest extends SapphireTest
     protected function setUp()
     {
         parent::setUp();
+
+        if (!class_exists(TestAssetStore::class)) {
+            $this->markTestSkipped('This test requires silverstripe/assets installed from source');
+        }
         TestAssetStore::activate('FileBlockTest');
 
         // Copy test images for each of the fixture references
@@ -30,13 +34,15 @@ class FileBlockTest extends SapphireTest
 
     protected function tearDown()
     {
-        TestAssetStore::reset();
+        if (class_exists(TestAssetStore::class)) {
+            TestAssetStore::reset();
+        }
         parent::tearDown();
     }
 
     public function testGetSummaryReturnsStringWithoutAssociatedFile()
     {
-        $block = new FileBlock;
+        $block = new FileBlock();
         $this->assertSame('', $block->getSummary());
     }
 

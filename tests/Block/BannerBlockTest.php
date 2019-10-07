@@ -15,7 +15,7 @@ class BannerBlockTest extends SapphireTest
 
     public function testTinyMceJavascriptIsRequiredBeforeBlocks()
     {
-        $block = new BannerBlock;
+        $block = new BannerBlock();
         $block->getCMSFields();
 
         $javascript = Requirements::backend()->getJavascript();
@@ -36,7 +36,7 @@ class BannerBlockTest extends SapphireTest
 
     public function testCallToActionLink()
     {
-        $block = new BannerBlock;
+        $block = new BannerBlock();
         $this->assertNull($block->CallToActionLink(), 'No link data set returns null');
 
         $block->CallToActionLink = json_encode([
