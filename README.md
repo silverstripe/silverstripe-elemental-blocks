@@ -9,12 +9,18 @@ This repository contains a base set of CMS content blocks for the [silverstripe-
 
 ## Warning: deprecated!
 
+For ease of maintenance and the ability for developers to individually select functionality, this module was split into two.
+
 For SilverStripe 4.2 or newer, please use one or both of the following modules instead:
 
 * [silverstripe/elemental-fileblock](https://github.com/silverstripe/silverstripe-elemental-fileblock)
 * [silverstripe/elemental-bannerblock](https://github.com/silverstripe/silverstripe-elemental-bannerblock)
 
-This module will only be accepting patch fixes to the `1.0` branch from now on.
+As a replacement for this module during an upgrade, there is a recipe that re-combines the content blocks into a single requirement:
+
+* [silverstripe/recipe-content-blocks](https://github.com/silverstripe/recipe-content-blocks)
+
+This module (`silverstripe/elemental-content-blocks`) will only be accepting patch fixes to the `1.0` branch from now on.
 
 ## Installation
 
