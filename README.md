@@ -20,7 +20,7 @@ As a replacement for this module during an upgrade, there is a recipe that re-co
 
 * [silverstripe/recipe-content-blocks](https://github.com/silverstripe/recipe-content-blocks)
 
-This module (`silverstripe/elemental-content-blocks`) will only be accepting patch fixes to the `1.0` branch from now on.
+This module (`silverstripe/elemental-content-blocks`) will not be accepting patch fixes from now on.
 
 ## Installation
 
